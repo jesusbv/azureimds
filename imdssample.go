@@ -16,7 +16,7 @@ func main() {
 
     q := req.URL.Query()
     q.Add("format", "json")
-    q.Add("api-version", "2021-02-01")
+    q.Add("api-version", "2023-07-01")
     req.URL.RawQuery = q.Encode()
 
     resp, err := client.Do(req)
