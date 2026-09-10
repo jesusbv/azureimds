@@ -96,13 +96,13 @@ namespace Samples
 
         private static Task<string> QueryInstanceEndpoint()
         {
-            return QueryImds(InstanceEndpoint, "2021-02-01");
+            return QueryImds(InstanceEndpoint, "2023-07-01");
         }
 
         private static Task<string> QueryAttestedEndpoint()
         {
             string nonce = "nonce=" + NonceValue;
-            return QueryImds(AttestedEndpoint, "2021-02-01", nonce);
+            return QueryImds(AttestedEndpoint, "2023-07-01", nonce);
         }
 
         // Query IMDS server and retrieve JSON result

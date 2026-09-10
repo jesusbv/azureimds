@@ -6,6 +6,7 @@ require 'json'
 # change path to the directory where your certs are
 CERT_PATH = '/etc/ssl/certs/'.freeze
 URL_METADATA = 'http://169.254.169.254/metadata/attested/document?api-version=2025-04-07'.freeze
+
 # Proxies must be bypassed when calling Azure IMDS
 # depending on your Ruby version you can do URI.open instead of open
 metadata = open(URL_METADATA, 'Metadata' => 'true', :proxy => nil).read
